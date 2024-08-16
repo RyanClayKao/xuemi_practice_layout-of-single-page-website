@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* 
+ *  Page name
+ *  Copyright 2024
+ *  Author
+ *  Licensed
+ */
+
+/* ------------------------ *\
+    Content
+\* ------------------------ */
+/* 
+ * Content ........... You are reading it!
+ * Global ............ Set common styles
+ * Layout ............ Set grid styles
+ * Component ......... Set component styles
+ */
+
+/* ------------------------ *\
+    Global
+\* ------------------------ */
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+html, body {
+  font-family: '微軟正黑體' arial;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* ------------------------ *\
+    Layout
+\* ------------------------ */
+
+
+/* ------------------------ *\
+    Component
+\* ------------------------ */
