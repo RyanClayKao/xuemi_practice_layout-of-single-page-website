@@ -91,3 +91,49 @@ a {
 /* ------------------------ *\
     Component
 \* ------------------------ */
+/* navbar */
+.navbar {
+  border: solid 1px #000;
+  height: 64px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar .brand {
+  display: inline-block;
+  vertical-align: top;
+  /* border: 1px solid #000; */
+  width: 160px;
+  height: 64px;
+  background-image: url('../images/common/logo.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* color: #fff; */
+  /* 文字不要斷行 */
+  white-space: nowrap;
+  /* 文字縮排 */
+  text-indent: 100%;
+  overflow: hidden;
+}
+
+.navbar .nav {
+  float: right;
+}
+
+.navbar .nav .nav-item {
+  float: left;
+}
+
+.navbar .nav .nav-link {
+  display: block;
+  line-height: 24px;
+  padding: 20px 16px;
+  color: #fff;
+  /* border: solid 1px #fff; */
+  transition: color 0.3s;
+}
+
+.navbar .nav .nav-link:hover {
+  color: #d5a26f;
+}
