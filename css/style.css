@@ -51,7 +51,7 @@ a {
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
-  border: solid 1px #333;
+  /* border: solid 1px #333; */
 }
 
 .row {
@@ -91,9 +91,59 @@ a {
 /* ------------------------ *\
     Component
 \* ------------------------ */
+
+/* btn */
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 4px 16px;
+  border: solid 1px #fff;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* 主要的按鈕 */
+.btn.btn-primary {
+  background-color: #d5a26f;
+  border: solid 1px #d5a26f;
+  color: white;
+}
+/* 次要的按鈕 */
+.btn.btn-secondary {
+  border-color: #d5a26f;
+  color: #d5a26f;
+}
+
+/* 大小的設定 */
+.btn.btn-lg {
+  padding: 8px 32px;
+}
+
+.btn-group-center {
+  /* border: solid 1px #fff; */
+  text-align: center;
+}
+
+.btn-group-center .btn {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+/* mask-dark */
+.mask-dark {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /* navbar */
 .navbar {
-  border: solid 1px #000;
+  /* border: solid 1px #000; */
   height: 64px;
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -137,3 +187,28 @@ a {
 .navbar .nav .nav-link:hover {
   color: #d5a26f;
 }
+
+/* jumbotron */
+.jumbotron {
+  /* border: solid 1px #000; */
+  margin: 0 auto;
+  padding-top: 224px;
+  padding-bottom: 160px;
+  background-image: url('/images//bg/bg001.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.jumbotron .logo-image {
+  height: 320px;
+  width: 320px;
+  /* border: solid 1px #000; */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+/* .jumbotron .btn-group-center {
+  margin: 8px;
+} */
