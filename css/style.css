@@ -25,7 +25,7 @@
 }
 
 html, body {
-  font-family: '微軟正黑體' arial;
+  font-family: '微軟正黑體', arial;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -280,4 +280,78 @@ a {
   text-align: justify;
   color: #333;
   margin-bottom: 24px;
+}
+
+
+/* section-intro */
+.section-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-intro .title {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.section-intro .para {
+  font-size: 16px;
+  line-height: 32px;
+  color: #333;
+}
+
+/* service-item */
+.service-item .preview {
+  padding-top: 16px;
+}
+
+.service-item .title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 8px;
+
+  /* 不換行，變成單行 */
+  white-space: nowrap;
+  /* 超出的範圍自動隱藏 */
+  overflow: hidden;
+  /* 文字超出範圍的部分，改用省略符號(...)取代之 */
+  text-overflow: ellipsis;
+}
+
+.service-item .subtitle {
+  font-size: 14px;
+  color: #d5a26f;
+  margin-bottom: 16px;
+}
+
+.service-item .para {
+  font-size: 16px;
+  color: #333;
+  line-height: 24px;
+  margin-bottom: 24px;
+  text-align: justify;
+
+  /* 假設只要顯示三行的狀況
+    透過算行高的方式去限制，
+    缺點在於沒辦法像單行的資料，用 text-overflow: ellipsis，
+    將結尾超出的文字用省略符號取代
+   */
+  height: 72px; /* 24 * 3 = 72 */
+  /* border: solid 1px #000; */
+  overflow: hidden;
+}
+
+/* reservation */
+.reservation {
+  background-image: url('../images/bg/bg002.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.reservation .section-intro .title,
+.reservation .section-intro .para {
+  color: #fff;
 }
