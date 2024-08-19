@@ -51,7 +51,7 @@ a {
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
-  /* border: solid 1px #333; */
+  border: solid 1px #333;
 }
 
 .row {
@@ -71,7 +71,6 @@ a {
 .col-1-2, .col-1-3, .col-1-4 {
   border: solid 1px red;
   float: left;
-  height: 300px;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -102,6 +101,7 @@ a {
   border: solid 1px #fff;
   color: #fff;
   border-radius: 4px;
+  transition: all 0.3s;
 }
 
 /* 主要的按鈕 */
@@ -110,10 +110,20 @@ a {
   border: solid 1px #d5a26f;
   color: white;
 }
+.btn.btn-primary:hover {
+  background-color: #b2875c;
+  border: solid 1px #b2875c;
+}
+
 /* 次要的按鈕 */
 .btn.btn-secondary {
   border-color: #d5a26f;
   color: #d5a26f;
+}
+
+.btn.btn-secondary:hover {
+  background-color: #d5a26f;
+  color: #fff;
 }
 
 /* 大小的設定 */
@@ -131,6 +141,33 @@ a {
   margin-right: 12px;
 }
 
+/* image-container */
+.image-container {
+  width: 100%;
+  border: solid 1px #333;
+}
+
+.image-container::before{
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 75%;
+}
+
+.image-container .image {
+  position: absolute;
+  /* 都設定成0，相當於是寬度、高度都設定成 100% */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  background-repeat: no-repeat;
+  /* 讓圖片自適應這個框 */
+  background-size: cover; 
+  background-position: center;
+}
+
 /* mask-dark */
 .mask-dark {
   background-color: rgba(0, 0, 0, 0.7);
@@ -139,6 +176,21 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+/* hero */
+.hero{
+  padding-top: 200px;
+  padding-bottom: 200px;
+  border: solid 1px #000;
+}
+
+.hero.hero-bg-white {
+  background-color: #fefefe;
+}
+
+.hero.hero-bg-grey {
+  background-color: #efefef;
 }
 
 /* navbar */
@@ -212,3 +264,20 @@ a {
 /* .jumbotron .btn-group-center {
   margin: 8px;
 } */
+
+/* about-preview */
+.about-preview .title{
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 24px;
+  margin-top: 80px;
+}
+
+.about-preview .para{
+  font-size: 16px;
+  line-height: 32px;
+  /* 可以設定文字左右對齊 */
+  text-align: justify;
+  color: #333;
+  margin-bottom: 24px;
+}
