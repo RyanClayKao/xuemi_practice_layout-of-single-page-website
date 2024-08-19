@@ -355,3 +355,66 @@ a {
 .reservation .section-intro .para {
   color: #fff;
 }
+
+/* menu-list */
+.menu-list {
+  margin-bottom: 64px;
+}
+
+.menu-list:last-child {
+  margin-bottom: 0px;
+}
+
+.menu-list .title-bar{
+  margin-bottom: 24px;
+}
+
+.menu-list .title-bar:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.menu-list .title-bar .title {
+  font-size: 24px;
+  line-height: 40px;
+  color: #d5a26f;
+  float: left;
+  padding-left: 16px;
+}
+
+.menu-list .title-bar .title::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 24px;
+  background-color: #d5a26f;
+
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0, -50%);
+}
+
+.menu-list .title-bar .btn {
+  float: right;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.menu-list .list-item .image-container:before{  
+  padding-top: 100%;
+}
+
+.menu-list .list-item .title {
+  font-size: 18px;
+  color: #333;
+  line-height: 24px;
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
+
+.menu-list .list-item .subtitle {
+  font-size: 14px;
+  color: #d5a26f;
+}
